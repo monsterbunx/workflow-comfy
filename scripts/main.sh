@@ -5,7 +5,7 @@ clors(){ echo -e "\e[1;${1};${2}m${3}\e[0m"; }
 
 apt update
 apt upgrade -y
-check neofetch htop curl nano
+check neofetch htop curl nano screen
 
 # Dependencias python
 check install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev liblzma-dev tk-dev libxml2-dev libxmlsec1-dev git

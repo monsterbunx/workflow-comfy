@@ -26,6 +26,7 @@ Expose TCP ports:
 ```
 ## Construir local:
 
+En una carpeta vacia copiar el comando:
 ```
 source <(curl -fsSL https://monsterbunx.github.io/workflow-comfy/local)
 ```

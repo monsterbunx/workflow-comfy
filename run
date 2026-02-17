@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /
+git init
+git remote add origin https://github.com/monsterbunx/workflow-comfy.git
+git config core.sparseCheckout true
+echo "/*" > .git/info/sparse-checkout
+git fetch origin
+git checkout origin/main -- .
+cd /scripts/
+./main.sh 

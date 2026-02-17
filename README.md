@@ -8,7 +8,7 @@ docker.io/library/debian:12
 ```
 Start Command:
 ```bash
-bash -c 'apt update && apt install -y openssh-server sudo curl wget neofetch git vim htop screen && time . <(curl -fsSL https://monsterbunx.github.io/workflow-comfy/run) && mkdir -p /run/sshd && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && echo "root:pass" | chpasswd && /usr/sbin/sshd -D'
+bash -c 'apt update && apt install -y openssh-server sudo curl wget neofetch git vim htop screen && source <(curl -fsSL https://monsterbunx.github.io/workflow-comfy/run) && mkdir -p /run/sshd && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && echo "root:pass" | chpasswd && /usr/sbin/sshd -D' 
 ```
 
 Volume mounth path:

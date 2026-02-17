@@ -17,7 +17,7 @@ Volume mounth path:
 ```
 Expose HTTP ports:
 ```
-80,81,8388,8488,8588,8688,8788,8888,8988,443
+80,81,8388,8488,8588,8688,443
 ```
 
 Expose TCP ports:

@@ -1,0 +1,26 @@
+services:
+  comfy:
+    image: debian:12
+    container_name: comfy
+    hostname: comfy
+    volumes:
+      - ./scripts:/scripts
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video  # ajusta según necesites (compute para CUDA, video para NVENC si usas encoding)
+    ports:
+      - "8388:8388"
+      - "8488:8488"
+      - "8588:8588"
+      - "8688:8688"
+    command: ["/bin/bash", "/scripts/main.sh"]
+    restart: unless-stopped

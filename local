@@ -6,4 +6,4 @@ rm -r temp
 
 docker compose -f comfy.yml up -d
 echo "WORKFLOW DE COMFY INICIADO, SALIR CON CTRL P + Q"
-docker exec -it comfy
+docker attach comfy

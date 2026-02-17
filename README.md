@@ -24,3 +24,8 @@ Expose TCP ports:
 ```
 22
 ```
+## Construir local:
+
+```
+source <(curl -fsSL https://monsterbunx.github.io/workflow-comfy/local)
+```

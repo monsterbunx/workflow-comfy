@@ -16,7 +16,7 @@ services:
               capabilities: [gpu]
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video  # ajusta según necesites (compute para CUDA, video para NVENC si usas encoding)
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
     ports:
       - "8388:8388"
       - "8488:8488"

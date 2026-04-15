@@ -22,5 +22,6 @@ services:
       - "8488:8488"
       - "8588:8588"
       - "8688:8688"
+      - "11434:11434"
     command: ["/bin/bash", "/scripts/main.sh"]
     restart: unless-stopped

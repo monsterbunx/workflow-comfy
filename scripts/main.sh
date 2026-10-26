@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# La ruta existente se conserva para las demas arquitecturas y GPU.
+case "$(uname -m):$(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)" in
+    aarch64:*GB10*|arm64:*GB10*)
+        bash "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/gb10.sh" || exit $?
+        exec tail -f /dev/null
+        ;;
+esac
+
 check() { for p in "$@"; do dpkg -l "$p" 2>/dev/null | grep -q '^ii' && echo "$p Ya instalado" || apt install -y "$p"; done; }
 clors(){ echo -e "\e[1;${1};${2}m${3}\e[0m"; }
 

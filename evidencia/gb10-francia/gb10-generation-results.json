@@ -1,0 +1,103 @@
+[
+  {
+    "seed": 42,
+    "elapsed_seconds": 5.02,
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "f028d53b-402b-410f-8d38-a6c179fb9938",
+            "timestamp": 1793054593795
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [],
+            "prompt_id": "f028d53b-402b-410f-8d38-a6c179fb9938",
+            "timestamp": 1793054593798
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "f028d53b-402b-410f-8d38-a6c179fb9938",
+            "timestamp": 1793054598048
+          }
+        ]
+      ]
+    },
+    "outputs": {
+      "7": {
+        "images": [
+          {
+            "filename": "gb10-smoke_00001_.png",
+            "subfolder": "",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seed": 43,
+    "elapsed_seconds": 2.0,
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "6bce6608-6594-4219-a035-ea752e03a42e",
+            "timestamp": 1793054598806
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "prompt_id": "6bce6608-6594-4219-a035-ea752e03a42e",
+            "timestamp": 1793054598807
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "6bce6608-6594-4219-a035-ea752e03a42e",
+            "timestamp": 1793054600438
+          }
+        ]
+      ]
+    },
+    "outputs": {
+      "7": {
+        "images": [
+          {
+            "filename": "gb10-smoke_00002_.png",
+            "subfolder": "",
+            "type": "output",
+            "metadata": {
+              "kind": "image",
+              "width": 512,
+              "height": 512
+            }
+          }
+        ]
+      }
+    }
+  }
+]

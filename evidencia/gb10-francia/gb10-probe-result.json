@@ -1,0 +1,38 @@
+{
+  "architecture": "aarch64",
+  "python": "3.12.15",
+  "torch": "2.14.1+cu130",
+  "cuda_runtime": "13.0",
+  "cuda_available": true,
+  "gpu": "NVIDIA GB10",
+  "compute_capability": [
+    12,
+    1
+  ],
+  "memory_free_total_GiB": [
+    87.25,
+    121.63
+  ],
+  "matmul": [
+    {
+      "dtype": "torch.float16",
+      "size": 4096,
+      "ms": 1.607,
+      "TFLOPS": 85.518
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "size": 4096,
+      "ms": 1.521,
+      "TFLOPS": 90.381
+    },
+    {
+      "dtype": "torch.float32",
+      "size": 4096,
+      "ms": 7.484,
+      "TFLOPS": 18.365
+    }
+  ],
+  "bf16_attention_forward_backward": "passed",
+  "4_GiB_allocation_and_write": "passed"
+}
